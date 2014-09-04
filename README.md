@@ -15,7 +15,9 @@ $ docker run thefactory/nagios-plugins CHECK_NAME [ARGS]
 ```console
 $ docker run thefactory/nagios-plugins check_http -H google.com
 HTTP OK: HTTP/1.1 301 Moved Permanently - 588 bytes in 0.046 second response time |time=0.046290s;;;0.000000 size=588B;;;0
+```
 
+```console
 $ docker run thefactory/nagios-plugins check_tcp -H google.com -p 80
 TCP OK - 0.007 second response time on port 80|time=0.006975s;;;0.000000;10.000000
 ```
